@@ -1,6 +1,6 @@
 /*
- * UC6 : As a User need to follow pre-defined Password rules.
- * Rule2 - Should have at least 1 Upper Case.
+ * UC7 : As a User need to follow pre-defined Password rules.
+ * Rule3 - Should have at least 1 numeric number in the password.
  */
 package com.bridgelabz.userregistration;
 
@@ -31,7 +31,7 @@ public class UserResistrationSystem {
 
 		System.out.println("Enter your Password : ");
 		String password = sc1.nextLine();
-		System.out.println(Pattern.matches("[A-Z][a-zA-Z]{7,}$", password));
+		System.out.println(Pattern.matches("(?=.*[A-Z])(?=.*[0-9]).{8,}$", password));
 
 	}
 
