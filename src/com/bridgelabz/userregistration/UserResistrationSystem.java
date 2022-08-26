@@ -1,5 +1,5 @@
 /*
- * UC1 : Valid First Name with first letter starting with capital and has minimum 3 characters in it.
+ * UC2 : Valid Last Name with first letter starting with capital and has minimum 3 characters in it.
  */
 package com.bridgelabz.userregistration;
 
