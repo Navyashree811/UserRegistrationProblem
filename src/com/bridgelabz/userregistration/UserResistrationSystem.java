@@ -1,5 +1,6 @@
 /*
- * UC3 : As a User need to enter a valid email.
+ * UC4 : As a User need to follow pre-defined Mobile Format.
+ * Ex.  91 9919819801 
  */
 package com.bridgelabz.userregistration;
 
@@ -22,6 +23,10 @@ public class UserResistrationSystem {
 		System.out.println("Enter your Email : ");
 		String Email = sc.nextLine();
 		System.out.println(Pattern.matches("^[a-zA-Z][a-zA-Z0-9_.]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+$", Email));
+
+		System.out.println("Enter your Mobile No. : ");
+		CharSequence mobileNum = sc.next();
+		System.out.println(Pattern.matches("(0|91)?[6-9][0-9]{9}", mobileNum));
 
 	}
 
