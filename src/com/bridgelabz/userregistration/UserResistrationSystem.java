@@ -1,6 +1,6 @@
 /*
- * UC5 : As a User need to follow pre-defined Password rules.
- * Rule1 - minimum 8 Characters.
+ * UC6 : As a User need to follow pre-defined Password rules.
+ * Rule2 - Should have at least 1 Upper Case.
  */
 package com.bridgelabz.userregistration;
 
@@ -31,7 +31,7 @@ public class UserResistrationSystem {
 
 		System.out.println("Enter your Password : ");
 		String password = sc1.nextLine();
-		System.out.println(Pattern.matches("[a-zA-Z]{8,}$", password));
+		System.out.println(Pattern.matches("[A-Z][a-zA-Z]{7,}$", password));
 
 	}
 
