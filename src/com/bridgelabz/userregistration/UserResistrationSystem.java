@@ -1,6 +1,6 @@
 /*
- * UC4 : As a User need to follow pre-defined Mobile Format.
- * Ex.  91 9919819801 
+ * UC5 : As a User need to follow pre-defined Password rules.
+ * Rule1 - minimum 8 Characters.
  */
 package com.bridgelabz.userregistration;
 
@@ -11,6 +11,7 @@ public class UserResistrationSystem {
 	public static void main(String[] args) {
 		System.out.println("Welcome to User Registration system using Regex");
 		Scanner sc = new Scanner(System.in);
+		Scanner sc1= new Scanner(System.in);
 
 		System.out.println("Enter your First Name : ");
 		String firstName = sc.nextLine();
@@ -27,6 +28,10 @@ public class UserResistrationSystem {
 		System.out.println("Enter your Mobile No. : ");
 		CharSequence mobileNum = sc.next();
 		System.out.println(Pattern.matches("(0|91)?[6-9][0-9]{9}", mobileNum));
+
+		System.out.println("Enter your Password : ");
+		String password = sc1.nextLine();
+		System.out.println(Pattern.matches("[a-zA-Z]{8,}$", password));
 
 	}
 
