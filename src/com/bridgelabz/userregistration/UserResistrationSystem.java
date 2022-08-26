@@ -1,6 +1,6 @@
 /*
- * UC7 : As a User need to follow pre-defined Password rules.
- * Rule3 - Should have at least 1 numeric number in the password.
+ * UC8 : As a User need to follow pre-defined Password rules.
+ * Rule4 - Has exactly 1 Special Character.
  */
 package com.bridgelabz.userregistration;
 
@@ -31,7 +31,7 @@ public class UserResistrationSystem {
 
 		System.out.println("Enter your Password : ");
 		String password = sc1.nextLine();
-		System.out.println(Pattern.matches("(?=.*[A-Z])(?=.*[0-9]).{8,}$", password));
+		System.out.println(Pattern.matches("(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[@#$%^&-+=()]).{8,}", password));
 
 	}
 
