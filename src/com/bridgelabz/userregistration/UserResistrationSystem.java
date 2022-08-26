@@ -1,5 +1,5 @@
 /*
- * UC1 : Valid First Name with first letter starting with capital and has minimum 3 characters in it.
+ * UC3 : As a User need to enter a valid email.
  */
 package com.bridgelabz.userregistration;
 
@@ -18,6 +18,10 @@ public class UserResistrationSystem {
 		System.out.println("Enter your Last Name : ");
 		String lastName = sc.nextLine();
 		System.out.println(Pattern.matches("[A-Z][a-z]{2,}", lastName));
+
+		System.out.println("Enter your Email : ");
+		String Email = sc.nextLine();
+		System.out.println(Pattern.matches("^[a-zA-Z][a-zA-Z0-9_.]*@[a-zA-Z0-9]+([.][a-zA-Z]+)+$", Email));
 
 	}
 
